@@ -1,0 +1,54 @@
+c:\users\mahamudn\documents\visual studio 2015\Projects\insta\insta\obj\Debug\insta.csprojResolveAssemblyReference.cache
+C:\Users\mahamudn\documents\visual studio 2015\Projects\insta\insta\bin\roslyn\csc.exe
+C:\Users\mahamudn\documents\visual studio 2015\Projects\insta\insta\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\mahamudn\documents\visual studio 2015\Projects\insta\insta\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\mahamudn\documents\visual studio 2015\Projects\insta\insta\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\mahamudn\documents\visual studio 2015\Projects\insta\insta\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\mahamudn\documents\visual studio 2015\Projects\insta\insta\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\mahamudn\documents\visual studio 2015\Projects\insta\insta\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\mahamudn\documents\visual studio 2015\Projects\insta\insta\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\mahamudn\documents\visual studio 2015\Projects\insta\insta\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\mahamudn\documents\visual studio 2015\Projects\insta\insta\bin\roslyn\vbc.exe
+C:\Users\mahamudn\documents\visual studio 2015\Projects\insta\insta\bin\roslyn\VBCSCompiler.exe
+C:\Users\mahamudn\documents\visual studio 2015\Projects\insta\insta\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\mahamudn\documents\visual studio 2015\Projects\insta\insta\bin\insta.dll.config
+C:\Users\mahamudn\documents\visual studio 2015\Projects\insta\insta\bin\insta.dll
+C:\Users\mahamudn\documents\visual studio 2015\Projects\insta\insta\bin\insta.pdb
+C:\Users\mahamudn\documents\visual studio 2015\Projects\insta\insta\bin\crypto.dll
+C:\Users\mahamudn\documents\visual studio 2015\Projects\insta\insta\bin\InstaSharp.dll
+C:\Users\mahamudn\documents\visual studio 2015\Projects\insta\insta\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\mahamudn\documents\visual studio 2015\Projects\insta\insta\bin\Newtonsoft.Json.dll
+C:\Users\mahamudn\documents\visual studio 2015\Projects\insta\insta\bin\crypto.pdb
+C:\Users\mahamudn\documents\visual studio 2015\Projects\insta\insta\bin\crypto.xml
+C:\Users\mahamudn\documents\visual studio 2015\Projects\insta\insta\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\mahamudn\documents\visual studio 2015\Projects\insta\insta\bin\Newtonsoft.Json.xml
+C:\Users\mahamudn\documents\visual studio 2015\Projects\insta\insta\obj\Debug\insta.dll
+C:\Users\mahamudn\documents\visual studio 2015\Projects\insta\insta\obj\Debug\insta.pdb
+C:\Users\mahamudn\documents\visual studio 2015\Projects\insta\insta\bin\DotNet.Highcharts.dll
+C:\Users\dev\Downloads\insta (2)\insta\insta\bin\roslyn\csc.exe
+C:\Users\dev\Downloads\insta (2)\insta\insta\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\dev\Downloads\insta (2)\insta\insta\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\dev\Downloads\insta (2)\insta\insta\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\dev\Downloads\insta (2)\insta\insta\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\dev\Downloads\insta (2)\insta\insta\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\dev\Downloads\insta (2)\insta\insta\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\dev\Downloads\insta (2)\insta\insta\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\dev\Downloads\insta (2)\insta\insta\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\dev\Downloads\insta (2)\insta\insta\bin\roslyn\vbc.exe
+C:\Users\dev\Downloads\insta (2)\insta\insta\bin\roslyn\VBCSCompiler.exe
+C:\Users\dev\Downloads\insta (2)\insta\insta\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\dev\Downloads\insta (2)\insta\insta\bin\insta.dll.config
+C:\Users\dev\Downloads\insta (2)\insta\insta\bin\insta.dll
+C:\Users\dev\Downloads\insta (2)\insta\insta\bin\insta.pdb
+C:\Users\dev\Downloads\insta (2)\insta\insta\bin\crypto.dll
+C:\Users\dev\Downloads\insta (2)\insta\insta\bin\DotNet.Highcharts.dll
+C:\Users\dev\Downloads\insta (2)\insta\insta\bin\InstaSharp.dll
+C:\Users\dev\Downloads\insta (2)\insta\insta\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\dev\Downloads\insta (2)\insta\insta\bin\Newtonsoft.Json.dll
+C:\Users\dev\Downloads\insta (2)\insta\insta\bin\crypto.pdb
+C:\Users\dev\Downloads\insta (2)\insta\insta\bin\crypto.xml
+C:\Users\dev\Downloads\insta (2)\insta\insta\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\dev\Downloads\insta (2)\insta\insta\bin\Newtonsoft.Json.xml
+C:\Users\dev\Downloads\insta (2)\insta\insta\obj\Debug\insta.csprojResolveAssemblyReference.cache
+C:\Users\dev\Downloads\insta (2)\insta\insta\obj\Debug\insta.dll
+C:\Users\dev\Downloads\insta (2)\insta\insta\obj\Debug\insta.pdb

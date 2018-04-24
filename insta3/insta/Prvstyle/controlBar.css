@@ -1,0 +1,250 @@
+
+.control-bar {
+    min-width: 600px;
+    height: 50px;
+    display: block;
+    margin: 5px 5px;
+    background: #f0f0f0;
+    line-height: 3.5em;
+    padding: 0px 0px 0 0;
+    -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, .1), 0 5px 5px 0px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 0 1px 1px rgba(0, 0, 0, .1), 0 5px 5px 0px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, .1), 0 5px 5px 0px rgba(0, 0, 0, .2);
+}
+
+.control-bar-header {
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+    padding: 0 4px;
+    background: #d0d0d0;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #000;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.6);
+}
+
+.control-bar-content {
+    display: inline-block;
+    height: 100%;
+    padding: 0px 5px 5px 5px;
+    background: transparent;
+    vertical-align: top;
+    /* margin-right:30px; */
+}
+
+.reset-content {
+    display: inline-block;
+    height: 100%;
+    float: right;
+    padding: 0px 8px 0px 0px;
+    background: transparent;
+    vertical-align: top;
+    margin-right: 0px;
+}
+
+.control-bar input[type="text"] {
+    width: 200px;
+}
+
+input[type="text"] {
+    border: 1px solid #ccc;
+    outline: none;
+    background-color: #fff;
+    font-family: Calibri,Tahoma,Arial;
+    font-size: 1em;
+    font-weight: 300;
+    padding: 10px;
+}
+
+    input[type="text"]:hover {
+        border: 1px solid #aaa;
+        -webkit-transition: all 0.15s ease-in-out 0s;
+        -moz-transition: all 0.15s ease-in-out 0s;
+        -o-transition: all 0.15s ease-in-out 0s;
+        transition: all 0.15s ease-in-out 0s;
+    }
+
+    input[type="text"]:focus {
+        -webkit-box-shadow: 0 10px 10px -5px rgba(0, 0, 0, .2);
+        -moz-box-shadow: 0 10px 10px -5px rgba(0, 0, 0, .2);
+        -o-box-shadow: 0 10px 10px -5px rgba(0, 0, 0, .2);
+        box-shadow: 0 10px 10px -5px rgba(0, 0, 0, .2);
+        -webkit-transition: all 0.15s ease-in-out 0s;
+        -moz-transition: all 0.15s ease-in-out 0s;
+        -o-transition: all 0.15s ease-in-out 0s;
+        transition: all 0.15s ease-in-out 0s;
+    }
+
+#fromDateBox, #untilDateBox {
+    width: 120px;
+}
+
+#fullArchiveCB {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/*Textbox placeholder formatting*/
+::-webkit-input-placeholder {
+    color: #aaa;
+}
+
+:-moz-placeholder {
+    color: #aaa;
+}
+
+::-moz-placeholder {
+    color: #aaa;
+}
+
+:-ms-input-placeholder {
+    color: #aaa;
+}
+
+select {
+    font-size: 1em;
+    border: 1px solid #ccc;
+    padding: 6px;
+}
+
+    select:hover {
+        border: 1px solid #aaa;
+    }
+
+option {
+    border: none;
+    outline: none;
+}
+
+.info-notice-button {
+    display: inline;
+    margin-left: 5px;
+    padding: 3px 8px;
+    font-weight: bold;
+    font-family: Georgia,'Times New Roman';
+    color: #55c;
+    border: 2px solid transparent; /*#8ed9f6;*/
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    background: #e3f7fc;
+    cursor: help;
+}
+
+    .info-notice-button:hover {
+        -moz-box-shadow: 0 0 2px 2px rgba(120, 170, 255, 0.3);
+        -webkit-box-shadow: 0 0 2px 2px rgba(120, 170, 255, 0.3);
+        box-shadow: 0 0 2px 2px rgba(120, 170, 255, 0.3);
+        text-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.2);
+        -webkit-transition: all 0.1s;
+        -moz-transition: all 0.1s;
+        -o-transition: all 0.1s;
+        transition: all 0.1s;
+    }
+
+#searchclear {
+    float: right;
+    top: 5px;
+    bottom: 0;
+    height: 14px;
+    margin: auto;
+    font-size: 14px;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.hiddenRule {
+    /* margin-left:5px; */
+    display: inline-block;
+}
+
+.searchChecks {
+    position: relative;
+    display: inline-block;
+}
+
+    .searchChecks label {
+        display: block;
+        height: 20px;
+        line-height: 1em;
+    }
+
+/* css for timepicker */
+#ui-datepicker-div {
+    font-size: 0.8em;
+    -moz-box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+.ui-timepicker-div .ui-widget-header {
+    margin-bottom: 8px;
+}
+
+.ui-timepicker-div dl {
+    text-align: left;
+}
+
+    .ui-timepicker-div dl dt {
+        height: 25px;
+        margin-bottom: -25px;
+    }
+
+    .ui-timepicker-div dl dd {
+        margin: 0 10px 10px 65px;
+    }
+
+.ui-timepicker-div td {
+    font-size: 90%;
+}
+
+.ui-tpicker-grid-label {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ui-timepicker-rtl {
+    direction: rtl;
+}
+
+    .ui-timepicker-rtl dl {
+        text-align: right;
+    }
+
+        .ui-timepicker-rtl dl dd {
+            margin: 0 65px 10px 10px;
+        }
+
+@media only screen and (min-device-width : 400px) and (max-device-width : 980px) {
+    input[type="text"] {
+        font-family: Calibri,Tahoma,Arial;
+        font-size: 0.9em;
+        padding: 5px;
+        width: 250px;
+    }
+
+    #fromDateBox, #untilDateBox {
+        width: 110px;
+    }
+
+    .searchChecks label {
+        font-size: .75em;
+    }
+
+    .control-bar-header {
+        font-size: 0.9em;
+        color: #000;
+    }
+
+    .hasDatepicker {
+        width: 80px;
+    }
+
+    .control-bar-content .button, .hiddenRule .button, .reset-content .button, #fs_toggle i {
+        padding: 6px 8px;
+        font-size: 0.9em;
+    }
+}

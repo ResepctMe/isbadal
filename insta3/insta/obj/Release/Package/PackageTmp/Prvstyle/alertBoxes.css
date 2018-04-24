@@ -1,0 +1,340 @@
+/*
+    Alert boxes
+*/
+
+.tooltip-wrapper {
+    display: none;
+    position: fixed;
+    z-index: 59000;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    /*pointer-events: none;*/
+}
+
+.alert-box {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 10px 10px 10px 32px;
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.no-shadow {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+}
+
+.alert-header {
+    font-weight: bold;
+}
+
+.alert-close {
+    font-family: 'Arial Unicode MS','Lucida Sans Unicode', Calibri, Tahoma;
+    font-size: 1em;
+    float: right;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-weight: normal;
+    color: rgba(0,0,0,0.3);
+    cursor: pointer;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+    .alert-close:hover {
+        color: rgba(0,0,0,0.6);
+    }
+
+.alert-body {
+    display: block;
+    margin-top: 10px;
+}
+/* 
+    if tooltip is displayed above content, put pointer triangle on bottom 
+*/
+.above:after {
+    content: "";
+    position: absolute;
+    bottom: -15px; /* value = - border-top-width - border-bottom-width */
+    left: 25px; /* controls horizontal position */
+    border-width: 15px 15px 0; /* vary these values to change the angle of the vertex */
+    border-style: solid;
+    display: block;
+    width: 0;
+    opacity: 1;
+}
+
+.tooltip-pointer-bottom {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: rgba(0,0,0,0.2);
+    display: block;
+    bottom: -10px;
+    left: 32px;
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+    -moz-transform: rotateZ(45deg);
+    -ms-transform: rotateZ(45deg);
+    -o-transform: rotateZ(45deg);
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+    z-index: -1;
+}
+
+/* 
+    if tooltip is displayed below content, put pointer triangle on bottom 
+*/
+.below:before {
+    content: "";
+    position: absolute;
+    top: -15px; /* value = - (border-top-width - border-bottom-width) */
+    left: 0px; /* controls horizontal position */
+    border-width: 0 15px 15px; /* vary these values to change the angle of the vertex */
+    border-style: solid;
+    /*border-color:#8ed9f6 transparent;*/
+    /* reduce the damage in FF3.0 */
+    display: block;
+    width: 0;
+    opacity: 1;
+}
+
+.tooltip-pointer-top {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: rgba(0,0,0,0.2);
+    display: block;
+    top: -10px;
+    left: 7px;
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+    -moz-transform: rotateZ(45deg);
+    -ms-transform: rotateZ(45deg);
+    -o-transform: rotateZ(45deg);
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+    z-index: -1;
+}
+
+.user-header {
+    font-weight: bold;
+}
+
+.user-close {
+    font-family: 'Arial Unicode MS','Lucida Sans Unicode', Calibri, Tahoma;
+    font-size: 1em;
+    float: right;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-weight: normal;
+    color: rgba(0,0,0,0.3);
+    cursor: pointer;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+    .user-close:hover {
+        color: rgba(0,0,0,0.6);
+    }
+
+.user-body {
+    display: block;
+    margin-top: 10px;
+}
+
+.user-box {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 10px 10px 10px 32px;
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* tooltip bg colour and icon image */
+.error {
+    background: #ffecec url('../Images/error.png') no-repeat 10px 12px;
+    color: #5f4242;
+}
+
+.success {
+    background: #f0fff0 url('../Images/success.png') no-repeat 10px 12px;
+    color: #405f30;
+}
+
+.warning {
+    background: #fff8c4 url('../Images/warning.png') no-repeat 10px 12px;
+    color: #5f5824;
+}
+
+.notice {
+    background: #dfefff url('../Images/notice.png') no-repeat 10px 12px;
+    color: #3f4f5f;
+}
+
+.copy {
+    background: #dfefff url('../Images/notice.png') no-repeat 10px 12px;
+    color: #3f4f5f;
+}
+
+.options {
+    background: #dfefff url('../Images/notice.png') no-repeat 10px 12px;
+    color: #3f4f5f;
+}
+
+.users {
+    background: #dfefff url('../Images/notice.png') no-repeat 10px 12px;
+    color: #3f4f5f;
+}
+
+.error:after, .error:before {
+    border-color: #ffecec transparent;
+}
+
+.success:after, .success:before {
+    border-color: #e9ffd9 transparent;
+}
+
+.warning:after, .warning:before {
+    border-color: #fff8c4 transparent;
+}
+
+.notice:after, .notice:before {
+    border-color: #dfefff transparent;
+}
+
+#icon_tooltip {
+    display: none;
+    position: absolute;
+    max-width: 220px;
+    text-align: left;
+    padding: 0;
+    z-index: 10100;
+    -webkit-box-shadow: 0 -20px 40px -20px rgba(0,0,0,0.2) inset, 0 0 10px 3px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 -20px 40px -20px rgba(0,0,0,0.2) inset, 0 0 10px 3px rgba(0, 0, 0, .3);
+    -o-box-shadow: 0 -20px 40px -20px rgba(0,0,0,0.2) inset, 0 0 10px 3px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, .3);
+}
+
+#tt_content_wrap, #tt_text_wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.tt-type {
+    position: relative;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    width: 24px;
+    color: #fff;
+    font-size: 1.35em;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.tt-text {
+    position: relative;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto; /* flex-grow, flex-shrink, flex-basis */
+    font-size: .9em;
+    color: #111;
+    padding: 8px 10px;
+    white-space: pre-wrap;
+}
+
+.tt-info {
+    background: #efefff;
+}
+
+.tt-warn {
+    background: #fff8cf;
+}
+
+.tt-info .tt-type {
+    background: #afafff;
+    color: #fff;
+    text-shadow: 1px 1px 1px 1px rgba(0,0,0,0.3);
+}
+
+.tt-warn .tt-type {
+    background: #ffec41;
+    color: #553;
+}
+
+/*-----------------------------------------------Please confirm alert box---------------------------------------------------*/
+
+#close_confirm {
+    position:absolute;
+    display:none;
+    flex-direction:column;
+    top:140px;
+    left:0;
+    right:0;
+    max-width:340px;
+    margin:auto;
+    background:#fff;
+    box-shadow:0 0 14px 6px rgba(0,0,0,0.40);
+    font-size:1.2em;
+    z-index: 22;
+}
+ 
+.confirm-header {
+    display:flex;
+    align-items:center;
+    background:#555;
+    color:#fff;
+    font-size:1.2em;
+}
+ 
+.confirm-header i {
+    padding:10px;
+    font-size:1.3em;
+    color:#fa0;
+    margin-right:10px;
+}
+ 
+.confirm-body {
+    padding:10px;
+    border:5px solid #f8f8f8
+}
+ 
+.confirm-footer {
+    display:flex;
+    justify-content:space-between;
+    padding:5px;
+    background:#f8f8f8;
+    font-size:.8em;
+}
+ 
+#btn_close_yes:hover i { 
+    color:#0a0; 
+    cursor:pointer;
+} 
+#btn_close_no:hover i { 
+    color:#a00; 
+    cursor:pointer;
+}

@@ -1,0 +1,159 @@
+/* header */
+
+#page_header {
+    width: auto;
+    min-width: 900px;
+    font-size: 40px;
+    border-bottom: 1px solid #bbb;
+    background: rgb(232,232,232);
+    background: -moz-linear-gradient(top, rgba(232,232,232,1) 0%, rgba(226,226,226,1) 67%, rgba(208,208,208,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(232,232,232,1)), color-stop(67%,rgba(226,226,226,1)), color-stop(100%,rgba(208,208,208,1)));
+    background: -webkit-linear-gradient(top, rgba(232,232,232,1) 0%,rgba(226,226,226,1) 67%,rgba(208,208,208,1) 100%);
+    background: -o-linear-gradient(top, rgba(232,232,232,1) 0%,rgba(226,226,226,1) 67%,rgba(208,208,208,1) 100%);
+    background: -ms-linear-gradient(top, rgba(232,232,232,1) 0%,rgba(226,226,226,1) 67%,rgba(208,208,208,1) 100%);
+    background: linear-gradient(to bottom, rgba(232,232,232,1) 0%,rgba(226,226,226,1) 67%,rgba(208,208,208,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8e8', endColorstr='#d0d0d0',GradientType=0 );
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05) inset, 0 0 1px 0 rgba(0, 0, 0, .2), 0 2px 2px rgba(0, 0, 0, .3), 0 10px 10px -5px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .05) inset, 0 0 1px 0 rgba(0, 0, 0, .2), 0 2px 2px rgba(0, 0, 0, .3), 0 10px 10px -5px rgba(0, 0, 0, .2);
+    -o-box-shadow: 0 1px 1px rgba(0, 0, 0, .05) inset, 0 0 1px 0 rgba(0, 0, 0, .2), 0 2px 2px rgba(0, 0, 0, .3), 0 10px 10px -5px rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05) inset, 0 0 1px 0 rgba(0, 0, 0, .2), 0 2px 2px rgba(0, 0, 0, .3), 0 10px 10px -5px rgba(0, 0, 0, .2);
+}
+
+#tbl_header {
+    border-collapse: collapse;
+        color: #333;
+        height: 100%;
+        width: 100%;
+}
+
+    #tbl_header td {
+        padding: 5px 5px 0;
+        margin: 0;
+        border: 0px solid #f00;
+    }
+
+.header-logo {
+    width: 210px;
+}
+
+#img_cosain {
+    width: 200px;
+    height: 63px;
+    position: relative;
+    top: 4px;
+}
+
+.page-title {
+    font-size: 1em;
+    vertical-align: bottom;
+}
+
+#page_title {
+    font-family: 'trajan_proregular', 'Segoe UI', Arial;
+    position: relative;
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.4), -1px -1px 1px rgba(0,0,0,0.15);
+}
+
+#lblVersion {
+    font-size: 0.4em;
+    position: relative;
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.3), -1px -1px 1px rgba(0,0,0,0.15);
+}
+
+.current-user {
+    position: relative;
+    overflow: hidden;
+    min-width: 150px;
+}
+
+#connectedUser {
+    position: absolute;
+    right: 5px;
+    top: 50px;
+    border: 1px solid #d0d0d0;
+    background: rgba(255,255,255,0.2);
+    color: #aaa;
+    font-size: 0.4em;
+    padding: 3px 5px;
+}
+
+#ruleHolder {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+#tab_dims {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 12px;
+    color: #000;
+}
+
+#fs_toggle {
+    display: none;
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    font-size: 0.5em;
+    text-align: center;
+    border: 1px solid #aaa;
+}
+
+
+    #fs_toggle:hover {
+        border: 1px solid #ccc;
+        background: #f8f8f8;
+        cursor: pointer;
+    }
+
+/* tablet */
+@media only screen and (min-device-width : 400px) and (max-device-width : 980px) {
+    #pageHeader {
+        width: auto;
+        min-width: 601px;
+    }
+
+    .header-logo {
+        width: 110px;
+    }
+
+    #img_cosain {
+        width: 121px;
+        height: 40px;
+    }
+
+    .page-title {
+        position: relative;
+        font-size: 0.65em;
+        text-align: left;
+        bottom: 1px;
+    }
+
+    #connectedUser {
+        font-size: 0.3em;
+        top: 35px;
+    }
+
+    #ruleHolder {
+        position: absolute;
+        right: 50px;
+        top: 5px;
+    }
+
+    #ruleLabel {
+        font-size: 0.8em;
+        bottom: 30px;
+    }
+
+    #fs_toggle {
+        display: block;
+        font-size: 0.4em;
+    }
+
+
+    #headerControl {
+        min-width: 601px;
+    }
+}

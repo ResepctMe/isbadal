@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\dev\Downloads\insta (2)\insta3\insta\obj\Debug\Package\PackageTmp" />
+  <setAcl path="C:\Users\dev\Downloads\insta (2)\insta3\insta\obj\Debug\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="C:\Users\dev\Downloads\insta (2)\insta3\insta\obj\Debug\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>

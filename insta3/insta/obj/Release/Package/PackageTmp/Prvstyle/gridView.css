@@ -1,0 +1,136 @@
+/*----------------------------------- MAIN DATA GRIDVIEW (gv) STYLES ----------------------------------------*/
+.gv {
+    color: #777;
+    /*width:100%;*/
+    min-width: 100%;
+    border: 0;
+    margin: 0px;
+    font-family: Calibri, Tahoma, Arial;
+    border-collapse: collapse;
+}
+
+    .gv .gvRow {
+        background: #f6f6f6;
+        text-align: left;
+    }
+
+    .gv .gvAltRow {
+        background: #f0f0f0;
+    }
+
+    .gv tr:hover {
+        background: #ddd;
+    }
+
+
+    .gv th {
+        border: 1px solid #ccc;
+        background: #e0e0e0;
+        color: #555;
+        padding: 10px;
+        font-variant: small-caps;
+        font-size: 1.3em;
+        font-weight: normal;
+    }
+
+    .gv td {
+        /*border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;*/
+        padding: 10px;
+        /*margin: 5px 0px 5px 0px;*/
+    }
+
+        .gv td img {
+            border: none;
+        }
+
+    .gv .hideGridColumn {
+        display: none;
+    }
+
+    .gv a {
+        color:#555;
+        text-decoration:none;
+    }
+
+    .gv a:hover {
+        color:#111;
+    }
+
+   
+.source {
+    max-width:80px;
+    text-align:center;
+}
+
+.avatar {
+    width: 80px;
+    padding: 10px;
+    text-align: center;
+}
+
+.timePosted {
+    width: 100px;
+    padding: 10px;
+}
+
+.account {
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+}
+
+.content {
+    width: 500px;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.location {
+    width: 250px;
+    padding-right: 10px;
+}
+
+/*.source, .avatar, .timePosted, .account, .content, .location, .klout, .followCount {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    margin: 5px 0px 5px 0px;
+}*/
+
+    .source img, .avatar img, .timePosted img, .account img, .content img, .location img {
+        border: none;
+    }
+
+.gv th span {
+    margin: 0 10px;
+}
+
+#gridDiv {
+    padding-top: 10px;
+    padding-left: 0px;
+    /*min-width: 100px;*/
+    min-width: 600px;
+    max-height: 88vh;
+    margin: 0px 10px 0px 10px;
+    position: relative;
+    overflow-y: auto;
+}
+
+/*---------------------------------------------------------------------------------------------------------------*/
+
+
+
+@media only screen and (max-device-width : 980px) {
+    .gv {
+        font-size:.9em;
+    }
+
+    .gv td {
+        padding:5px;
+    }
+
+    .content {
+        max-width:35%;
+    }
+}

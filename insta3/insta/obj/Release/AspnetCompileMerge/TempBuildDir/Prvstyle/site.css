@@ -1,0 +1,148 @@
+* {
+    font-family: Calibri, Tahoma, Arial;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+html {
+    /*height:100%;*/
+    min-width: 940px;
+}
+
+body {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    background: #fff;
+    color: #444;
+}
+
+/*#f0f0f0;*/
+/* embed trajan pro font used for cosain title */
+@font-face {
+    font-family: 'trajan_proregular';
+    src: url('trajanpro-regular-webfont.eot');
+    src: url('trajanpro-regular-webfont.eot?#iefix') format('embedded-opentype'), url('trajanpro-regular-webfont.woff') format('woff'), url('TrajanPro-Regular.ttf') format('truetype'), url('trajanpro-regular-webfont.svg#trajan_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#content {
+    min-width: 940px;
+    max-width: 100%;
+    display: inline;
+    float: right;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    vertical-align: top;
+}
+
+    #content #tblContent {
+        border: none;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        border-spacing: 0px;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+#chartDiv {
+    min-width: 600px;
+    max-width: 1903px;
+    height: 69vh;
+    margin: 0 auto;
+    position: relative;
+    /*padding-top:10px;*/
+}
+
+.terms {
+    top: 0;
+}
+
+.net {
+    top: 107px;
+}
+
+.refresh {
+    top: 213px;
+}
+
+.SE {
+    top: 319px;
+}
+
+.exit {
+    top: 425px;
+}
+
+/* page-overlay-flex, and modal-popup-flex are used to control device orientaiton image*/
+/* tabletorientation */
+.page-overlay-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: none;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: fixed;
+    /*top: -140px;*/
+    /*height: 1650px;*/
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999999;
+    background: rgb(224,224,224);
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.3)), color-stop(100%,rgba(0,0,0,0.3)));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%);
+    background: -o-linear-gradient(top, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%);
+    background: -ms-linear-gradient(top, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#4d000000',GradientType=0 );
+}
+
+.modal-popup-flex {
+    display: none;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    background: #fff;
+    -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 0 5px 5px rgba(0, 0, 0, .2);
+    -o-box-shadow: 0 0 5px 5px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, .2);
+}
+
+#orientationimg {
+    position: relative;
+    /*height: auto;*/
+    /*width: 1000px;*/
+    /*top:180px;*/
+
+}
+/* zooms the page out when in portrait view to ensure page fits screen*/
+@media (min-width: 480px) and (max-width: 900px) and (orientation:portrait) {
+    html {
+        zoom: 0.6;
+        overflow-y: hidden;
+    }
+}
+
+/* The below media query stops the tooltips from being displayed on tablet */
+@media only screen and (max-device-width : 980px) {
+    #searchTooltip, #advMenuTooltip, #clearTooltip {
+        display: none;
+    }
+}
